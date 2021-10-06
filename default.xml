@@ -1092,6 +1092,8 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+
+  <include name="aospa.xml" />
   <include name="obsolete.xml" />
 
 </manifest>
