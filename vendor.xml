@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- CAF Vendor -->
+  <remote name="caf_vendor"
+          fetch="https://source.codeaurora.org/quic/la"
+          review="codeaurora.org"
+          revision="refs/tags/LA.UM.9.14.r1-18300.02-LAHAINA.QSSI12.0"/>
+
+  <project name="device/qcom/sepolicy_vndr" remote="caf_vendor"/>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="caf_vendor"/>
+  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" remote="caf_vendor"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataservices_vendor_product.mk" src="dataservices_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf_vendor"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf_vendor"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="caf_vendor"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" remote="caf_vendor">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_ext_dlkm_vendor_board.mk" src="datarmnet_ext_dlkm_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" remote="caf_vendor"/>
+</manifest>
