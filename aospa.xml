@@ -42,6 +42,10 @@
     <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
   </project>
 
+  <!-- External -->
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="AOSPA/android_external_fastrpc" remote="github" revision="ruby"/>
+
   <!-- Manifest -->
   <project path="manifest" name="manifest" remote="aospa" />
 
