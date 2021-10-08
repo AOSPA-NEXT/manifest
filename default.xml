@@ -1094,6 +1094,7 @@
 
 
   <include name="aospa.xml" />
+  <include name="system.xml" />
   <include name="vendor.xml" />
   <include name="obsolete.xml" />
 
